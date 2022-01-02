@@ -19,8 +19,6 @@ loadImage("/img/tiles.png").then((image) => {
   sprites.define("ground", 0, 0);
   sprites.define("sky", 3, 23);
 
-  console.log("스프라이트", sprites);
-
   loadLevel("1-1").then((level) => {
     level.backgrounds.forEach((bg) => {
       drawBackground(bg, context, sprites);
